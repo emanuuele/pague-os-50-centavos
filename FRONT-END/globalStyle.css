@@ -18,17 +18,15 @@ h2 {
 
 p {
     font-size: 1.5rem;
-    margin: 10px;
 }
 
 .primary-button {
     border-radius: 50px;
     background: #94C973;
     height: 40px;
-    max-width: 20rem;
-    min-width: 100px;
+    width: 100%;
     border: none;
-    margin: 10px;
+    margin-top: 21px;
 }
 
 .container {
@@ -46,6 +44,7 @@ p {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
+    width: 100%;
     border-radius: 4px;
     box-shadow: 0px 1px 2px 0px rgba(55, 65, 81, 0.08);
     border: none;
