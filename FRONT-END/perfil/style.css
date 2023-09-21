@@ -1,0 +1,18 @@
+@media (max-width: 800px) {
+    h1 {
+        font-size: medium;
+    }
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.button {
+    border-radius: 5px;
+    background: #94C973;
+    height: 40px;
+    width: 70%;
+    border: none;
+    margin-top: 21px;
+}
