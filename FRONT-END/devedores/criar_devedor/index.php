@@ -10,18 +10,29 @@ include_once 'index.php'
     <link rel="stylesheet" href="../../globalStyle.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="../img/cash.svg" type="image/svg">
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import {
+            initializeApp
+        } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+        import {
+            getAnalytics
+        } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-analytics.js";
+
+        import {rebaseConfig} from '../../consts.js'
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
 </head>
 
 <body>
-    <?php
-    class Pagamento
-    {
-        public $dtvencimento;
-        public $devedor;
-        public $valor_divida;
-        public $dtlancamento;
-    }
-    ?>
     <div class="container">
         <div class="content">
             <div class="header">
@@ -35,7 +46,7 @@ include_once 'index.php'
                     </div>
                     <div>
                         <label for="nome">Nome</label>
-                        <input name="nome" class="input"/>
+                        <input name="nome" class="input" />
                     </div>
                     <div style="display: flex; justify-content: center; width: 100%;">
                         <button class="primary-button">Criar</button>
